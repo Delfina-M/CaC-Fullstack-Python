@@ -1,24 +1,46 @@
-/* Estilos Generales */
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+/* -------------------------------- Estilos Generales ------------------------------ */
 body {
     margin: 0%;
+    box-sizing: border-box;
+    width: 100%;
     background-color: #fffcf2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #003554;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #121f27;
 }
 
 .text-white {
     color: #fffcf2;
 }
 
-/* Estilos del Header */
+/* ------------------------ Estilos del Header ---------------------------- */
+
 .header {
     grid-area: header;
 }
 
 .header-top {
-    background-color:#077861;
+    background-color: #077861;
     display: flex;
     justify-content: flex-end;
     align-content: center;
-    padding-right: 2%;   
+    padding-right: 2%;
 }
 
 .info-institucion-header {
@@ -32,6 +54,9 @@ body {
     padding-bottom: 1%;
     padding-right: 3%;
     gap: 2%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.85rem;
 }
 
 .info-institucion-header a {
@@ -49,21 +74,33 @@ body {
 }
 
 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     color: #003554;
-    font-size: 5vw;
+    font-size: 4vw;
+}
+
+h1 span {
+    font-weight: 400;
 }
 
 .logo {
-    width: 10vw;    
+    width: 8vw;
 }
+
+/* ------------------------ Estilos de la Barra de Navegación ---------------------------- */
 
 .nav-bar {
     background-color: #003554;
     position: sticky;
+    z-index: 2000;
     top: 0;
     padding-right: 3%;
     grid-area: nav-bar;
-    padding-left: 2%;
+    padding-left: 1%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
 }
 
 .menu {
@@ -108,7 +145,36 @@ h1 {
     color: #003554;
 }
 
-/* Estilos del Footer */
+/* ------------------------ Estilos del Banner de sección ---------------------------- */
+
+.banner {
+    grid-area: banner;
+    background: linear-gradient(0deg, #077861d9 0%, #003554d9 60%), url(./images/istockphoto-995630866-1024x1024.jpg);
+    background-size: cover;
+    background-position-y: 33%;
+}
+
+.banner h2 {
+    padding-left: 5%;
+    padding-top: 1%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #fffcf2;
+}
+
+.banner h4 {
+    color: #c0c0c0;
+    border: none;
+    text-align: start;
+    padding-left: 5%;
+    padding-top: 0.5%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+/* ------------------------ Estilos del Footer ---------------------------- */
 
 .footer {
     grid-area: footer;
@@ -116,16 +182,16 @@ h1 {
     display: flex;
 }
 
-footer > div {
-    width: 100vw;
+footer>div {
+    width: 100%;
 }
 
 .footer-top {
     display: flex;
 }
 
-.contenedor-redes { 
-    width: 50vw;
+.contenedor-redes {
+    width: 50%;
 }
 
 .lista-redes {
@@ -138,6 +204,7 @@ footer > div {
 .redes {
     padding: 1.5%;
     border: 1px solid #fffcf2;
+    font-size: 1rem;
 }
 
 .contenedor-info {
@@ -151,14 +218,20 @@ footer > div {
     list-style-type: none;
     justify-content: center;
     gap: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
 }
 
 .info-institucion-footer li {
     display: flex;
     gap: 1vw;
-    padding: 1%;
+    padding: 2%;
 }
 
+.info-institucion-footer i {
+    font-size: 1.2rem;
+}
 
 .info-institucion-footer a {
     text-decoration: none;
@@ -171,58 +244,157 @@ footer > div {
     justify-content: space-around;
     align-content: center;
 }
-
-/* Secciones grid cuerpo principal */
-
-.section-1 {
-    grid-area: section-1;
-    background: linear-gradient(0deg, #077861d9 0%, #003554d9 60%), url(./images/istockphoto-995630866-1024x1024.jpg);
-    background-size: cover;
-    background-position-y: 33%;
+.footer-bottom a {
+    text-align: center;
+    margin: 1em 0 1em 0; 
+}
+.footer-bottom p, a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #fffcf2;
+    font-size: 0.85rem;
 }
 
-.section-1 div {
-    height: 100%;
-}
-
-.section-1 h2 {
-    padding-left: 5%;
-    padding-top: 1%;
-}
-.section-1 h4{
-    color: #c0c0c0;
-    padding-left: 5%;
-    padding-top: 0.5%;
-}
+/* ------------------------ Secciones grid cuerpo principal ---------------------------- */
 
 .section-2 {
     grid-area: section-2;
+    border: 1px solid red;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .section-3 {
     grid-area: section-3;
+    border: 1px solid red;
+    margin: 1rem;
 }
 
 .section-4 {
     grid-area: section-4;
+    border: 1px solid red;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .section-5 {
     grid-area: section-5;
+    border: 1px solid red;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .section-6 {
     grid-area: section-6;
+    border: 1px solid red;
+    margin: 1rem;
+    padding: 1rem;
 }
 
-/* Diseño grid */
-.contenedor-grid {
-    display: grid;
-    grid-template: auto auto 25vh auto auto auto/ 40vw 40vw 20vw;
-    grid-template-areas: "header header header"
-                         "nav-bar nav-bar nav-bar"
-                         "section-1 section-1 section-1"
-                         "section-2 section-2 section-3"
-                         "section-4 section-5 section-6"
-                         "footer footer footer";
+/* --------------------- Diseño grid ------------------------------ */
+
+@media only screen and (min-width: 1200px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto 25vh auto auto auto auto/ 1.5fr 1.5fr 1fr;
+        grid-template-areas: "header header header"
+            "nav-bar nav-bar nav-bar"
+            "banner banner banner"
+            "section-2 section-2 section-3"
+            "section-4 section-4 section-5"
+            "section-6 section-6 section-6"
+            "footer footer footer";
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto/ 1fr 1fr;
+        grid-template-areas: "header header "
+            "nav-bar nav-bar "
+            "banner banner "
+            "section-2 section-2"
+            "section-3 section-5"
+            "section-4 section-4"
+            "section-6 section-6"
+            "footer footer";
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto/ 1fr;
+        grid-template-areas: "header"
+            "nav-bar"
+            "banner"
+            "section-2"
+            "section-3"
+            "section-4"
+            "section-5"
+            "section-6"
+            "footer";
+    }
+
+    h1 { 
+        font-size: 6vw;}
+
+    h1 span {
+        display: none;
+    }
+
+    .logo {
+        width: 12vw;
+    }
+
+    .nav-bar {
+        padding: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        padding: 3% 0%;
+    }
+
+    .menu li {
+        width: 100%
+    }
+
+    .menu li {
+        padding: 1%;
+        border: 1px solid #003554;
+        text-align: center;
+        align-self: center;
+    }
+    
+    .menu li:first-child {
+        background-color: #fffcf2;
+        border: 1px solid #fffcf2;
+        border-radius: 0px;
+    }
+
+    .menu li:hover {
+        background-color: #fffcf2;
+        border: 1px solid #fffcf2;
+        border-radius: 0px;
+    }
+    
+    .menu li:hover a {
+        color: #003554;
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .contenedor-redes, .contenedor-info {
+        width: 100%;
+    }
+
+    .lista-redes, .info-institucion-footer {
+        padding-left: 0%;
+        justify-content: center;
+    }   
 }
