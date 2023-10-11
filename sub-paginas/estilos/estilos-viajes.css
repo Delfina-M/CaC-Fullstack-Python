@@ -1,0 +1,38 @@
+.section-2 h2, .section-4 h2, .section-5 h2, .section-7 h2 {
+    position: relative;
+}
+
+.section-2 h2::after, .section-4 h2::after,
+.section-5 h2::after, .section-7 h2::after {
+    content: "";
+    bottom: -10px;
+    background: #077861;
+    height: 10%;
+    left: 0;
+    position: absolute;
+    width: 50px;
+}
+
+.section-7 {
+    grid-area: section-7;
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #003554b3;
+}
+
+.section-2 i, .section-5 i {
+    color: #077861;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template: auto auto 25vh auto auto auto auto auto/ 1fr 1fr;
+    grid-template-areas: "header header"
+        "nav-bar nav-bar"
+        "banner banner"
+        "section-2 section-3"
+        "section-2 section-4"
+        "section-5 section-6"
+        "section-5 section-7"
+        "footer footer";
+}

@@ -7,7 +7,7 @@
     <title>Instituto de Idiomas Babel</title>
     <link rel="icon" href="../images/tower-of-babel-sin-fondo.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="../estilos-babel.css">
-    <link rel="stylesheet" href="./estilos-contacto.css">
+    <link rel="stylesheet" href="./estilos/estilos-contacto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -20,7 +20,7 @@
     <div class="contenedor-grid">
         <header class="header">
             <div class="header-top">
-                <ul class="info-institucion-header text-white">
+                <ul class="info-institucion-header">
                     <li><a href="./preguntas.html">Preguntas Frecuentes</a></li>
                     <li>|</li>
                     <li><a href="./contacto.html">Contacto</a></li>
@@ -40,20 +40,49 @@
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./quienes.html">Quiénes somos</a></li>
                 <li><a href="./cursos.html">Nuestros cursos</a></li>
-                <li><a href="./viajes.html">Nuestros Viajes</a></li>
-                <li><a href="./contacto.html">Contactanos</a></li>
+                <li><a href="./viajes.html">Nuestros viajes</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
         <div class="banner">
             <h2>Contacto</h2>
             <h4>Envianos tu consulta. Nos contactaremos a la brevedad</h4>
         </div>
-        <div class="form-1">
+        <div class="section-2">
             <h2>Formulario de contacto</h2>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias dolores natus repellendus corrupti aut
-            pariatur ratione voluptatum praesentium! Cum minus nesciunt in. Atque quibusdam est, non nemo aspernatur
-            dolore voluptatibus asperiores esse aut voluptas vel distinctio nobis dolorum neque fugit facilis rem ut
-            doloribus quaerat. Aspernatur, rem? Qui, officiis quo?
+            <form action="mostrar_datos.html" target="_blank">
+
+                <label for="ape">Apellido/s </label>
+                <input type="text" name="apellido" id="ape">
+                <br><br>
+                <label for="nom">Nombre/s </label>
+                <input type="text" name="Nombre" id="nom">
+                <br><br>
+                <fieldset>
+                    <input type="radio" name="que es" id="si">
+                    <label for="si">Soy Alumno</label>
+
+                    <input type="radio" name="que es" id="no">
+                    <label for="no"> Aún no soy Alumno</label>
+                </fieldset>
+                <br><br>
+                <label for=DNI"">DNI/PASP/CI </label>
+                <input type="number" name="Doc" id="DNI">
+                <br><br>
+                <label for="mail">Email </label>
+                <input type="email" name="mail" id="mail">
+                <br><br>
+                <label for="fecha">Fecha de Nacimiento</label>
+                <input type="date" name="fecha" id="fecha">
+                <br><br>
+                <textarea name="consuta" id="cons" cols="30" rows="10" placeholder="¿Cuál es su consulta?"></textarea>
+                <br><br>
+                <input type="checkbox" name="acepto" id="acepto">
+                <label for="acepto">Quiero suscribirme al newsletter</label>
+                <br><br>
+                <input type="reset" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </form>
         </div>
         <footer class="footer">
             <div>
@@ -61,19 +90,19 @@
                     <div class="contenedor-redes">
                         <ul class="lista-redes">
                             <li class="redes"><a href="https://twitter.com/" target="_blank"><i
-                                        class="fa-brands fa-x-twitter text-white" title="IIB Oficial"></i></a></li>
+                                        class="fa-brands fa-x-twitter" title="IIB Oficial"></i></a></li>
                             <li class="redes"><a href="https://www.facebook.com/" target="_blank"><i
-                                        class="fa-brands fa-facebook-f text-white" title="IIB Oficial"></i></a></li>
+                                        class="fa-brands fa-facebook-f" title="IIB Oficial"></i></a></li>
                             <li class="redes"><a href="https://www.youtube.com/" target="_blank"><i
-                                        class="fa-brands fa-youtube text-white" title="IIB Oficial"></i></a></li>
+                                        class="fa-brands fa-youtube" title="IIB Oficial"></i></a></li>
                             <li class="redes"><a href="https://www.instagram.com/" target="_blank"><i
-                                        class="fa-brands fa-instagram text-white" title="IIB Oficial"></i></a></li>
+                                        class="fa-brands fa-instagram" title="IIB Oficial"></i></a></li>
                             <li class="redes"><a href="https://ar.linkedin.com/" target="_blank"><i
-                                        class="fa-brands fa-linkedin-in text-white" title="IIB Oficial"></i></a></li>
+                                        class="fa-brands fa-linkedin-in" title="IIB Oficial"></i></a></li>
                         </ul>
                     </div>
                     <div class="contenedor-info">
-                        <ul class="info-institucion-footer text-white">
+                        <ul class="info-institucion-footer">
                             <li>
                                 <div><i class="fa-solid fa-phone fa-shake"></i></div>
                                 <div>Llamanos <br> 5555-IIBB</div>
@@ -89,11 +118,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="footer-bottom text-white">
+                <div class="footer-bottom">
                     <p>Copyright ©2023 Todos los derechos reservados</p>
                     <p> Diseño Web: Tres Tristes Tigres</p>
                     <a href="https://www.flaticon.com/free-icons/tower-of-babel" title="tower of babel icons"
-                        target="_blank" class="text-white">
+                        target="_blank">
                         Tower of babel icons created by Good Ware - Flaticon</a>
                 </div>
             </div>

@@ -1,0 +1,33 @@
+.section-3 i {
+    color: #077861;
+    font-size: 1.5rem;
+}
+
+.section-2 h2, .section-3 h2, 
+.section-4 h2, .section-5 h2, .section-6 h2 {
+    position: relative;
+}
+
+.section-2 h2::after, .section-3 h2::after, 
+.section-4 h2::after, .section-5 h2::after, 
+.section-6 h2::after {
+    content: "";
+    bottom: -10px;
+    background: #077861;
+    height: 10%;
+    left: 0;
+    position: absolute;
+    width: 50px;
+}
+
+.contenedor-grid {
+    display: grid;
+    grid-template: auto auto 25vh auto auto auto auto/ 1.5fr 1fr 1.5fr;
+    grid-template-areas: "header header header"
+        "nav-bar nav-bar nav-bar"
+        "banner banner banner"
+        "section-2 section-2 section-2"
+        "section-4 section-4 section-3"
+        "section-5 section-5 section-6"
+        "footer footer footer";
+}

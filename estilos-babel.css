@@ -1,7 +1,11 @@
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif; */
+/* --------------------------------- Info útil -------------------------------------------------*/
 
-/* -------------------------------- Estilos Generales ------------------------------ */
+/* font-family: 'Montserrat', sans-serif; weight: 400, 500, 600 (encabezado)
+   font-family: 'Open Sans', sans-serif; weight: 300, 400, 500  (resto de la página)
+   colores: blanco #fffcf2 - azul #003554 - verde #077861 - gris (parrafo) #121f27 - gris (banner) #c0c0c0 */
+
+
+/* ----------------------------------------- Estilos Generales ------------------------------ */
 body {
     margin: 0%;
     box-sizing: border-box;
@@ -25,11 +29,7 @@ p {
     color: #121f27;
 }
 
-.text-white {
-    color: #fffcf2;
-}
-
-/* ------------------------ Estilos del Header ---------------------------- */
+/* -------------------------------------- Estilos del Header ------------------------------------- */
 
 .header {
     grid-area: header;
@@ -56,12 +56,13 @@ p {
     gap: 2%;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
+    color: #fffcf2;
 }
 
 .info-institucion-header a {
     text-decoration: none;
-    color: #fffcf2;
+    font-size: 0.9rem;
 }
 
 .header-bottom {
@@ -88,7 +89,7 @@ h1 span {
     width: 8vw;
 }
 
-/* ------------------------ Estilos de la Barra de Navegación ---------------------------- */
+/* ----------------------------------- Estilos de la Barra de Navegación ---------------------------- */
 
 .nav-bar {
     background-color: #003554;
@@ -98,9 +99,6 @@ h1 span {
     padding-right: 3%;
     grid-area: nav-bar;
     padding-left: 1%;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    font-size: 0.9rem;
 }
 
 .menu {
@@ -129,6 +127,9 @@ h1 span {
 .menu a {
     text-decoration: none;
     color: #fffcf2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
 }
 
 .menu li:first-child a {
@@ -145,7 +146,7 @@ h1 span {
     color: #003554;
 }
 
-/* ------------------------ Estilos del Banner de sección ---------------------------- */
+/* ------------------------------------------- Estilos del Banner de sección -------------------------------------- */
 
 .banner {
     grid-area: banner;
@@ -174,7 +175,7 @@ h1 span {
     font-size: 0.9rem;
 }
 
-/* ------------------------ Estilos del Footer ---------------------------- */
+/* ------------------------------------------- Estilos del Footer --------------------------------------------- */
 
 .footer {
     grid-area: footer;
@@ -204,7 +205,11 @@ footer>div {
 .redes {
     padding: 1.5%;
     border: 1px solid #fffcf2;
+}
+
+.redes a {
     font-size: 1rem;
+    color: #fffcf2;
 }
 
 .contenedor-info {
@@ -227,6 +232,7 @@ footer>div {
     display: flex;
     gap: 1vw;
     padding: 2%;
+    color: #fffcf2;
 }
 
 .info-institucion-footer i {
@@ -235,7 +241,7 @@ footer>div {
 
 .info-institucion-footer a {
     text-decoration: none;
-    color: #fffcf2;
+    font-size: 0.9rem;
 }
 
 .footer-bottom {
@@ -244,10 +250,12 @@ footer>div {
     justify-content: space-around;
     align-content: center;
 }
+
 .footer-bottom a {
     text-align: center;
     margin: 1em 0 1em 0; 
 }
+
 .footer-bottom p, a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -255,55 +263,56 @@ footer>div {
     font-size: 0.85rem;
 }
 
-/* ------------------------ Secciones grid cuerpo principal ---------------------------- */
+/* --------------------------------------------- Secciones grid cuerpo principal ----------------------------------------------- */
 
 .section-2 {
     grid-area: section-2;
-    border: 1px solid red;
     margin: 1rem;
     padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #003554b3;
 }
 
 .section-3 {
     grid-area: section-3;
-    border: 1px solid red;
     margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #003554b3;
 }
 
 .section-4 {
     grid-area: section-4;
-    border: 1px solid red;
     margin: 1rem;
     padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #003554b3;
 }
 
 .section-5 {
     grid-area: section-5;
-    border: 1px solid red;
     margin: 1rem;
     padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #003554b3;
 }
 
 .section-6 {
     grid-area: section-6;
-    border: 1px solid red;
     margin: 1rem;
     padding: 1rem;
+    box-shadow: 0px 0px 20px 1px #003554b3;
 }
 
-/* --------------------- Diseño grid ------------------------------ */
+/* ------------------------------------ Diseño grid y media queries gral/index ---------------------------------------- */
 
 @media only screen and (min-width: 1200px) {
     .contenedor-grid {
         display: grid;
-        grid-template: auto auto 25vh auto auto auto auto/ 1.5fr 1.5fr 1fr;
-        grid-template-areas: "header header header"
-            "nav-bar nav-bar nav-bar"
-            "banner banner banner"
-            "section-2 section-2 section-3"
-            "section-4 section-4 section-5"
-            "section-6 section-6 section-6"
-            "footer footer footer";
+        grid-template: auto auto 25vh auto auto auto auto/ 3fr 1fr;
+        grid-template-areas: "header header"
+            "nav-bar nav-bar"
+            "banner banner"
+            "section-2 section-3"
+            "section-4 section-5"
+            "section-6 section-6"
+            "footer footer";
     }
 }
 
@@ -313,7 +322,7 @@ footer>div {
         grid-template: auto auto auto auto auto auto auto/ 1fr 1fr;
         grid-template-areas: "header header "
             "nav-bar nav-bar "
-            "banner banner "
+            "banner banner"
             "section-2 section-2"
             "section-3 section-5"
             "section-4 section-4"

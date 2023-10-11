@@ -1,14 +1,8 @@
-.form-1 {
-    grid-area: form-1;
-    padding: 1rem;
-    margin: 1rem;
-}
-
-.form-1 h2 {
+.section-2 h2 {
     position: relative;
 }
 
-.form-1 h2::after {
+.section-2 h2::after  {
     content: "";
     bottom: -10px;
     background: #077861;
@@ -25,6 +19,6 @@
     grid-template-areas: "header"
                          "nav-bar"
                          "banner"
-                         "form-1"
+                         "section-2"
                          "footer";
 }
