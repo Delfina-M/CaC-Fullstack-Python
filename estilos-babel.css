@@ -241,6 +241,8 @@ footer>div {
 
 .info-institucion-footer a {
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
     font-size: 0.9rem;
 }
 
@@ -253,7 +255,8 @@ footer>div {
 
 .footer-bottom a {
     text-align: center;
-    margin: 1em 0 1em 0; 
+    margin: 1em 0 1em 0;
+    text-decoration: none; 
 }
 
 .footer-bottom p, a {
@@ -368,11 +371,8 @@ footer>div {
     }
 
     .menu li {
-        width: 100%
-    }
-
-    .menu li {
-        padding: 1%;
+        width: 100%;
+        padding: 1% 0%;
         border: 1px solid #003554;
         text-align: center;
         align-self: center;

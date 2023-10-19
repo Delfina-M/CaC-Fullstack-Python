@@ -1,9 +1,11 @@
-.section-2 h2, .section-4 h2, .section-5 h2, .section-7 h2 {
+.section-2 h2, .section-3 h2, .section-4 h2, 
+.section-5 h2, .section-6 h2, .section-7 h2 {
     position: relative;
 }
 
-.section-2 h2::after, .section-4 h2::after,
-.section-5 h2::after, .section-7 h2::after {
+.section-2 h2::after, .section-3 h2::after,
+.section-4 h2::after, .section-5 h2::after,
+.section-6 h2::after, .section-7 h2::after {
     content: "";
     bottom: -10px;
     background: #077861;
