@@ -48,7 +48,7 @@ h5 {
     height: 40rem;
     border: 1.5px solid #003554;
     border-radius: 2%;
-    background: linear-gradient(0deg, #003554 50%, #fffcf27b 50%), url(./images/Complete-Background-Check-Education.jpg);
+    background: linear-gradient(0deg, #003554 50%, #fffcf296 50%), url(./images/Complete-Background-Check-Education.jpg);
     background-size: fill;
     background-position-y: 90%;
     background-position-x: 45%;
@@ -129,7 +129,7 @@ h5 {
     box-sizing: border-box;
 }
 
-@keyframes giro2 {
+/* @keyframes giro2 {
     0% {
         transform: rotateX(0deg);
     }
@@ -141,7 +141,7 @@ h5 {
     100% {
         transform: rotateX(360deg);
     }
-}
+} */
 
 /* ----------------------------------- Animación Becas --------------------------------- */
 
