@@ -37,7 +37,6 @@ h5 {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    border: 1px solid red;
 }
 
 .tarjeta {
@@ -129,7 +128,7 @@ h5 {
     box-sizing: border-box;
 }
 
-/* @keyframes giro2 {
+@keyframes giro2 {
     0% {
         transform: rotateX(0deg);
     }
@@ -141,7 +140,7 @@ h5 {
     100% {
         transform: rotateX(360deg);
     }
-} */
+}
 
 /* ----------------------------------- Animación Becas --------------------------------- */
 

@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/e49f5bb3f3.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./validacion.js"></script>
 </head>
 
 <body>
@@ -50,38 +51,42 @@
         </div>
         <div class="section-2">
             <h2>Formulario de contacto</h2>
-            <form action="mostrar_datos.html" target="_blank">
+            <form name="contacto">
+                <div>
+                    <label for="ape">Apellido/s </label>
+                    <input type="text" name="apellido" id="ape">
+                    <br><br>
+                    <label for="nom">Nombre/s </label>
+                    <input type="text" name="nombre" id="nom">
+                    <br><br>
+                    <fieldset>
+                        <input type="radio" name="que es" id="si">
+                        <label for="si">Soy Alumno</label>
 
-                <label for="ape">Apellido/s </label>
-                <input type="text" name="apellido" id="ape">
-                <br><br>
-                <label for="nom">Nombre/s </label>
-                <input type="text" name="Nombre" id="nom">
-                <br><br>
-                <fieldset>
-                    <input type="radio" name="que es" id="si">
-                    <label for="si">Soy Alumno</label>
-
-                    <input type="radio" name="que es" id="no">
-                    <label for="no"> Aún no soy Alumno</label>
-                </fieldset>
-                <br><br>
-                <label for=DNI"">DNI/PASP/CI </label>
-                <input type="number" name="Doc" id="DNI">
-                <br><br>
-                <label for="mail">Email </label>
-                <input type="email" name="mail" id="mail">
-                <br><br>
-                <label for="fecha">Fecha de Nacimiento</label>
-                <input type="date" name="fecha" id="fecha">
-                <br><br>
-                <textarea name="consuta" id="cons" cols="30" rows="10" placeholder="¿Cuál es su consulta?"></textarea>
-                <br><br>
-                <input type="checkbox" name="acepto" id="acepto">
-                <label for="acepto">Quiero suscribirme al newsletter</label>
-                <br><br>
-                <input type="reset" value="Limpiar">
-                <input type="submit" value="Enviar">
+                        <input type="radio" name="que es" id="no">
+                        <label for="no"> Aún no soy Alumno</label>
+                    </fieldset>
+                    <br><br>
+                    <label for="dni">DNI/PASP/CI </label>
+                    <input type="number" name="dni" id="dni">
+                    <br><br>
+                    <label for="mail">Email </label>
+                    <input type="email" name="mail" id="mail">
+                    <br><br>
+                    <label for="fecha">Fecha de Nacimiento</label>
+                    <input type="date" name="fecha" id="fecha">
+                    <br><br>
+                </div>
+                <div>
+                    <textarea name="consulta" id="cons" cols="50" rows="15"
+                        placeholder="¿Cuál es su consulta?"></textarea>
+                    <br><br>
+                    <input type="checkbox" name="acepto" id="acepto">
+                    <label for="acepto">Quiero suscribirme al newsletter</label>
+                    <br><br>
+                    <input type="reset" value="Limpiar">
+                    <input type="button" value="Enviar" onclick="validarEnviar()">
+                </div>
             </form>
         </div>
         <footer class="footer">

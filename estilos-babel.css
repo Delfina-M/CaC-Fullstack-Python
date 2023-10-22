@@ -305,7 +305,7 @@ footer>div {
 
 /* ------------------------------------ Diseño grid y media queries gral/index ---------------------------------------- */
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1199px) {
     .contenedor-grid {
         display: grid;
         grid-template: auto auto 25vh auto auto auto auto/ 3fr 1fr;
@@ -319,10 +319,10 @@ footer>div {
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
     .contenedor-grid {
         display: grid;
-        grid-template: auto auto auto auto auto auto auto/ 1fr 1fr;
+        grid-template: auto auto auto auto auto auto auto auto/ 1fr 1fr;
         grid-template-areas: "header header "
             "nav-bar nav-bar "
             "banner banner"
@@ -337,7 +337,7 @@ footer>div {
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .contenedor-grid {
         display: grid;
-        grid-template: auto auto auto auto auto auto auto/ 1fr;
+        grid-template: auto auto auto auto auto auto auto auto auto/ 1fr;
         grid-template-areas: "header"
             "nav-bar"
             "banner"

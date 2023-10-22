@@ -4,6 +4,17 @@
     margin: 1rem;
 }
 
+.section-2 form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-2 form div {
+    width: 25rem;
+    margin: 1rem;
+}
+
 .section-2 h2 {
     position: relative;
 }
