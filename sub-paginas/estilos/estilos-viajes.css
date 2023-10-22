@@ -26,15 +26,107 @@
     color: #077861;
 }
 
-.contenedor-grid {
-    display: grid;
-    grid-template: auto auto 25vh auto auto auto auto auto/ 1fr 1fr;
-    grid-template-areas: "header header"
-        "nav-bar nav-bar"
-        "banner banner"
-        "section-2 section-3"
-        "section-2 section-4"
-        "section-5 section-6"
-        "section-5 section-7"
-        "footer footer";
+@media only screen and (min-width: 1199px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto 25vh auto auto auto auto auto/ 1fr 1fr;
+        grid-template-areas: "header header"
+                            "nav-bar nav-bar"
+                            "banner banner"
+                            "section-2 section-3"
+                            "section-2 section-4"
+                            "section-5 section-6"
+                            "section-5 section-7"
+                            "footer footer";
+    }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1199px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto auto/ 1fr 1fr;
+        grid-template-areas: "header header"
+                            "nav-bar nav-bar"
+                            "banner banner"
+                            "section-2 section-2"
+                            "section-3 section-4"
+                            "section-5 section-5"
+                            "section-6 section-7"
+                            "footer footer";
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .contenedor-grid {
+        display: grid;
+        grid-template: auto auto auto auto auto auto auto auto auto auto/ 1fr;
+        grid-template-areas: "header"
+                            "nav-bar"
+                            "banner"
+                            "section-2"
+                            "section-3"
+                            "section-4"
+                            "section-6"
+                            "section-5"
+                            "section-7"
+                            "footer";
+    }
+
+    h1 { 
+        font-size: 6vw;}
+
+    h1 span {
+        display: none;
+    }
+
+    .logo {
+        width: 12vw;
+    }
+
+    .nav-bar {
+        padding: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        padding: 3% 0%;
+    }
+
+    .menu li {
+        width: 100%;
+        padding: 1% 0%;
+        border: 1px solid #003554;
+        text-align: center;
+        align-self: center;
+    }
+    
+    .menu li:first-child {
+        background-color: #fffcf2;
+        border: 1px solid #fffcf2;
+        border-radius: 0px;
+    }
+
+    .menu li:hover {
+        background-color: #fffcf2;
+        border: 1px solid #fffcf2;
+        border-radius: 0px;
+    }
+    
+    .menu li:hover a {
+        color: #003554;
+    }
+
+    .footer-top {
+        flex-direction: column;
+    }
+
+    .contenedor-redes, .contenedor-info {
+        width: 100%;
+    }
+
+    .lista-redes, .info-institucion-footer {
+        padding-left: 0%;
+        justify-content: center;
+    }   
 }
