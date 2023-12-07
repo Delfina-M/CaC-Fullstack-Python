@@ -1,0 +1,118 @@
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-2 h2, .section-3 h2 {
+    position: relative;
+    align-self: flex-start;
+}
+
+.section-2 h2::after, .section-3 h2::after {
+    content: "";
+    bottom: -10px;
+    background: #077861;
+    height: 10%;
+    left: 0;
+    position: absolute;
+    width: 50px;
+}
+
+.botonera {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border: 1.5px solid #003554;
+    border-radius: 0.5rem;
+    margin: 1rem;
+}
+
+.boton-menu {
+    width: 20rem;
+    margin: 1rem;
+    padding: 1rem;
+    color: #fffcf2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #077861;
+    border: none;
+    border-radius: 0.5rem;
+    align-self: center;
+    cursor: pointer;
+}
+
+.boton-menu:hover {
+    background-color: #055646;
+}
+
+#contenedor {
+    display: none;
+}
+
+#contenido {
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-consultas {
+    width: 100%;
+    border: 1.5px solid #003554;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+}
+
+.tabla-consultas th, th i {
+    padding: 1rem 0.5rem;
+    color: #fffcf2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #077861;
+    border-radius: 0.5rem;
+}
+
+.tabla-consultas td {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #121f27;
+    padding: 1rem 0.5rem;
+}
+td i {
+    color: #003554;
+    cursor: pointer;
+}
+
+.center {
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #efece3;
+}
+
+.section-3 form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.section-3 form div {
+    width: 25rem;
+    margin: 1rem;
+}
+
+.contenedor-grid {
+    display: grid;
+    column-gap: 1rem;
+    grid-template: auto auto 25vh auto auto auto / auto;
+    grid-template-areas: "header"
+                         "nav-bar"
+                         "banner"
+                         "section-2"
+                         "section-3"
+                         "footer";
+}

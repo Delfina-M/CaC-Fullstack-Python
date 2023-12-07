@@ -43,12 +43,20 @@ p {
     padding-right: 2%;
 }
 
+.admin {
+    width: 10%;
+    font-size: 1.5rem;
+    padding-left: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+}
+
 .info-institucion-header {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
     list-style-type: none;
-    width: 100%;
+    width: 90%;
     margin: 0%;
     padding-top: 1%;
     padding-bottom: 1%;
@@ -347,6 +355,14 @@ footer>div {
             "section-5"
             "section-6"
             "footer";
+    }
+
+    .admin {
+        width: 10%;
+        font-size: 1.2rem;
+        padding-left: 2%;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
     }
 
     h1 { 

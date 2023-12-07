@@ -7,15 +7,15 @@
     <title>Instituto de Idiomas Babel</title>
     <link rel="icon" href="../images/tower-of-babel-sin-fondo.png" type="image/png" sizes="16x16">
     <link rel="stylesheet" href="../estilos-babel.css">
-    <link rel="stylesheet" href="./estilos/estilos-contacto.css">
+    <link rel="stylesheet" href="./estilos/admin.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Open+Sans:wght@300;400;500&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/e49f5bb3f3.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./validacion_envio.js"></script>
-</head>
+    <script type="text/javascript" src="./showtime.js"></script>
+</head>    
 
 <body>
     <div class="contenedor-grid">
@@ -47,48 +47,20 @@
             </ul>
         </nav>
         <div class="banner">
-            <h2>Contacto</h2>
-            <h4>Envianos tu consulta. Nos contactaremos a la brevedad</h4>
+            <h2>Home de administración del sitio</h2>
+            <h4>¡Bienvenido administrador web!</h4>
         </div>
         <div class="section-2">
-            <h2>Formulario de contacto</h2>
-            <form name="contacto" id="contacto" enctype="multipart/form-data">
-                <div>
-                    <label for="apellido">Apellido/s </label>
-                    <input type="text" name="apellido" id="apellido">
-                    <br><br>
-                    <label for="nombre">Nombre/s </label>
-                    <input type="text" name="nombre" id="nombre">
-                    <br><br>
-                    <fieldset>
-                        <input type="radio" name="inscripto" id="si" value="true">
-                        <label for="si">Soy Alumno</label>
-
-                        <input type="radio" name="inscripto" id="no" value="false">
-                        <label for="no"> Aún no soy Alumno</label>
-                    </fieldset>
-                    <br>
-                    <label for="dni">DNI/PASP/CI </label>
-                    <input type="number" name="dni" id="dni">
-                    <br><br>
-                    <label for="mail">Email </label>
-                    <input type="email" name="mail" id="mail">
-                    <!-- <br><br>
-                    <label for="fecha">Fecha de Nacimiento</label>
-                    <input type="date" name="fecha" id="fecha">
-                    <br><br> -->
-                </div>
-                <div>
-                    <textarea name="consulta" id="consulta" cols="50" rows="15"
-                        placeholder="¿Cuál es su consulta?" maxlength="600"></textarea>
-                    <br><br>
-                    <input type="checkbox" name="suscripcion" id="suscripcion">
-                    <label for="suscripcion">Quiero suscribirme al newsletter</label>
-                    <br><br>
-                    <input type="reset" value="Limpiar">
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
+            <h2>Menú</h2>
+            <div class="botonera">
+                <button type="button" class="boton-menu" onclick="mostrarListado('Listado de consultas', 1)">Listado de consultas</button>
+                <button type="button" class="boton-menu" onclick="mostrarListado('Modificación de consultas', 2)">Modificar datos de consultas</button>
+                <button type="button" class="boton-menu" onclick="mostrarListado('Baja de consultas', 3)">Eliminar consultas</button>
+            </div>
+        </div>
+        <div class="section-3" id="contenedor">
+            <h2 id="titulo"></h2>
+            <div id="contenido"></div>
         </div>
         <footer class="footer">
             <div>
@@ -118,18 +90,19 @@
                                 <div>Whatsapp <br> 54 9 11 5555-IIBB</div>
                             </li>
                             <li>
-                                <div><a href="./contacto.html"><i class="fa-solid fa-envelope fa-flip"></a></i></div>
-                                <div><a href="./contacto.html">Contacto</a></div>
+                                <div><a href="./contacto.html"><i
+                                            class="fa-solid fa-envelope fa-flip"></a></i></div>
+                                <div><a href="./contacto.html" id="contacto">Contacto</a></div>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-bottom">
                     <p>Copyright ©2023 Todos los derechos reservados</p>
-                    <p> Diseño Web: Tres Tristes Tigres</p>
+                    <p>Diseño Web: Tres Tristes Tigres</p>
                     <a href="https://www.flaticon.com/free-icons/tower-of-babel" title="Tower of Babel icons"
-                        target="_blank">
-                        Tower of babel icons created by Good Ware - Flaticon</a>
+                        target="_blank"">Tower of babel icons created by Good Ware - Flaticon
+                    </a>
                 </div>
             </div>
         </footer>
